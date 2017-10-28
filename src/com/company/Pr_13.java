@@ -7,19 +7,20 @@ import java.io.InputStreamReader;
 /**
  * Created by user on 28.10.2017.
  */
-public class Pr_10 {
+public class Pr_13 {
     public static void main(String[] args) throws IOException {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите первое число = ");
+        System.out.println("Введите первую переменную = ");
         int a = Integer.parseInt(r.readLine());
-        System.out.println("Введите второе число = ");
+        System.out.println("Введите вторую переменную = ");
         int b = Integer.parseInt(r.readLine());
+        System.out.println(a);
+        System.out.println(b);
+        a += 2 * (b - a);
+        b -= (a - b);
+        a -= (a - b) / 2;
+        System.out.println(a);
+        System.out.println(b);
 
-        int S=a+b;
-        System.out.println("Введите % = ");
-        int P = Integer.parseInt(r.readLine());
-
-        int P2=((S/100)*P);
-        System.out.println("процент от суммы = "+P2);
     }
 }
