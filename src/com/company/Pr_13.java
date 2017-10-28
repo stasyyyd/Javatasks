@@ -19,6 +19,7 @@ public class Pr_13 {
         a += 2 * (b - a);
         b -= (a - b);
         a -= (a - b) / 2;
+        
         System.out.println(a);
         System.out.println(b);
 
