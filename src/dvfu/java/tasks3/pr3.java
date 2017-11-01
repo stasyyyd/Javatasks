@@ -1,4 +1,4 @@
-package com.company.tasks3;
+package dvfu.java.tasks3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
