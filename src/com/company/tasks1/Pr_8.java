@@ -1,4 +1,4 @@
-package com.company;
+package com.company.tasks1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -9,7 +9,7 @@ public class Pr_8 {
         int rub=Integer.parseInt(r.readLine());
         double $=rub*58.0833;
         double euro=rub*67.5276;
-        System.out.println("Cумма в долларах:" + " " +$);
-        System.out.println("Cумма в евро:" + " " +euro);
+        System.out.format("Cумма в долларах:" + " " +$);
+        System.out.format("Cумма в евро:" + " " +euro);
     }
 }

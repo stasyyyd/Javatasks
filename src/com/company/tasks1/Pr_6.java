@@ -1,4 +1,4 @@
-package com.company;
+package com.company.tasks1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
