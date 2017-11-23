@@ -10,6 +10,7 @@ public class Options implements TestSystem{
     String correctAnswer;
     ArrayList<String> optionQuestions =new ArrayList<>();
     Questions questions=new Questions();
+    int score;
 
     public ArrayList<String> getOptionQuestions() {
 

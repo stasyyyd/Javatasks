@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Questions implements TestSystem {
 
     ArrayList<String> questions =new ArrayList<>();
-    int score;
+
 
     public ArrayList<String> getQuestions() {
         questions.add(0,"Вопрос 1");
