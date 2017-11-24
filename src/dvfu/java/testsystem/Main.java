@@ -12,12 +12,9 @@ public class Main {
         test.show();
 
         Options options=new Options();
-        options.getOptionQuestions();
-      // options.getOptionQuestions1();
-        //options.getOptionQuestions2();
-        //options.getOptionQuestions3();
-        //options.getOptionQuestions4();
 
+        options.getOptionQuestions();
+     
 
         System.out.print("Введите номер варианта: ");
 
