@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Введите номер варианта: ");
         options.getOptionQuestions3();
         System.out.println("Введите номер варианта: ");
-        /загрузка теста из файловллллллооорп
+        /загрузка теста из файловллллллооорпп
         options.getOptionQuestions4();
         System.out.println("Введите номер варианта: ");*/
 
