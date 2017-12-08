@@ -133,6 +133,7 @@ public class Options implements TestSystem{
             correctAnswer++;
         }
         else {
+
             System.out.println("Неверно");
 
         }
@@ -140,22 +141,7 @@ public class Options implements TestSystem{
         return optionQuestions4;
     }
 
-    /*public String getCorrectAnswer() throws IOException {
 
-        int answer1 = Integer.parseInt(r.readLine());
-        int answer2 = Integer.parseInt(r.readLine());
-        int answer3 = Integer.parseInt(r.readLine());
-        int answer4 = Integer.parseInt(r.readLine());
-          if (getOptionQuestions==2||answer1==3||answer2==2||answer3==2||answer4==4){
-            System.out.println("Ответ верный");
-            score++;
-        } else {
-            System.out.println("Неверно");
-        }
-
-        return correctAnswer;
-    }
-*/
     @Override
     public void show() {
 

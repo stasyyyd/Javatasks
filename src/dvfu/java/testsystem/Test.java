@@ -11,7 +11,7 @@ public class Test implements TestSystem {
 
     @Override
     public void show() {
-    System.out.println("Тема теста");
+    System.out.println("Информатика");
     }
 
     @Override
