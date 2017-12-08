@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Options implements TestSystem{
-    String nameOption;
+
     int correctAnswer;
     ArrayList<String> optionQuestions =new ArrayList<>();
     ArrayList<String> optionQuestions1 =new ArrayList<>();
@@ -14,7 +14,7 @@ public class Options implements TestSystem{
     ArrayList<String> optionQuestions3 =new ArrayList<>();
     ArrayList<String> optionQuestions4 =new ArrayList<>();
     Questions questions=new Questions();
-    int score;
+
 
     public ArrayList<String> getOptionQuestions() throws IOException{
 
@@ -32,11 +32,11 @@ public class Options implements TestSystem{
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         int answer = Integer.parseInt(r.readLine());
             if (answer==2){
-                System.out.println("Верно");
+                System.out.println("ВЕРНО");
                 correctAnswer++;
             }
             else {
-                System.out.println("Неверно");
+                System.out.println("НЕВЕРНО");
 
             }
 
@@ -57,11 +57,11 @@ public class Options implements TestSystem{
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         int answer1 = Integer.parseInt(r.readLine());
         if (answer1==2){
-            System.out.println("Верно");
+            System.out.println("ВЕРНО");
             correctAnswer++;
         }
         else {
-            System.out.println("Неверно");
+            System.out.println("НЕВЕРНО");
         }
         return optionQuestions1;
     }
@@ -80,11 +80,11 @@ public class Options implements TestSystem{
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         int answer = Integer.parseInt(r.readLine());
         if (answer==2){
-            System.out.println("Верно");
+            System.out.println("ВЕРНО");
             correctAnswer++;
         }
         else {
-            System.out.println("Неверно");
+            System.out.println("НЕВЕРНО");
 
         }
 
@@ -105,11 +105,11 @@ public class Options implements TestSystem{
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         int answer = Integer.parseInt(r.readLine());
         if (answer==1){
-            System.out.println("Верно");
+            System.out.println("ВЕРНО");
             correctAnswer++;
         }
         else {
-            System.out.println("Неверно");
+            System.out.println("НЕВЕРНО");
 
         }
 
@@ -129,12 +129,12 @@ public class Options implements TestSystem{
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         int answer = Integer.parseInt(r.readLine());
         if (answer==2){
-            System.out.println("Верно");
+            System.out.println("ВЕРНО");
             correctAnswer++;
         }
         else {
 
-            System.out.println("Неверно");
+            System.out.println("НЕВЕРНО");
 
         }
 
