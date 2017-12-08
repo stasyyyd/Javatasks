@@ -21,7 +21,7 @@ public class Test implements TestSystem {
 
         System.out.println("Правильных ответов "+options.correctAnswer+" из 5");
 
-        
+
     }
 
 

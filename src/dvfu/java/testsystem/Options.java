@@ -45,10 +45,10 @@ public class Options implements TestSystem{
     }
     public ArrayList<String> getOptionQuestions1() throws IOException {
         System.out.println(questions.getQuestions().get(1));
-        optionQuestions1.add(0,"1. бод");
+        optionQuestions1.add(0,"1. Кбайт");
         optionQuestions1.add(1,"2. бит");
         optionQuestions1.add(2,"3. байт");
-        optionQuestions1.add(3,"4. Кбайт");
+
 
         for (int i=0;i<optionQuestions1.size();i++){
             System.out.println(optionQuestions1.get(i));
