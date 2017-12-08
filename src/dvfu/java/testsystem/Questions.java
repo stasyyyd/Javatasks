@@ -11,11 +11,11 @@ public class Questions implements TestSystem {
 
 
 public ArrayList<String> getQuestions() throws IOException {
-        questions.add(0,"Вопрос 1");
-        questions.add(1,"Вопрос 2");
-        questions.add(2,"Вопрос 3");
-        questions.add(3,"Вопрос 4");
-        questions.add(4,"Вопрос 5");
+        questions.add(0,"Производительность работы компьютера (быстрота выполнения операций) зависит от");
+        questions.add(1,"За единицу измерения количества информации принят");
+        questions.add(2,"Какое устройство может оказывать вредное воздействие на здоровье человека?");
+        questions.add(3,"Основным элементом базы данных является");
+        questions.add(4,"Заражение компьютерными вирусами может произойти в процессе");
 
     return questions;
 }

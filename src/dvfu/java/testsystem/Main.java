@@ -11,35 +11,20 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws IOException{
 
-        /*Test test=new Test();
+        Test test=new Test();
         test.show();
 
         Options options=new Options();
         options.getOptionQuestions();
-        System.out.println("Введите номер варианта: ");
-
-        /*options.getOptionQuestions1();
-        System.out.println("Введите номер варианта: ");
-
+        options.getOptionQuestions1();
         options.getOptionQuestions2();
-        System.out.println("Введите номер варианта: ");
         options.getOptionQuestions3();
-        System.out.println("Введите номер варианта: ");
-        /загрузка теста из файловллллллооорпп
         options.getOptionQuestions4();
-        System.out.println("Введите номер варианта: ");*/
 
-         FileInputStream fileInputStream =new FileInputStream("c:/test/Test.txt");
-         BufferedReader r=new BufferedReader(new InputStreamReader(fileInputStream));
 
-        ArrayList<String> list=new ArrayList<>();
-        while (r.ready()){
-            list.add(r.readLine());
-        }
-        for (String s:list){
-            System.out.println(s);
-        }
-        /*options.getCorrectAnswer();*/
+        System.out.println("Правильных ответов "+options.correctAnswer+" из 5");
+
+        //options.getCorrectAnswer();
 
     }
 

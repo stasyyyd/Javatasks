@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Options implements TestSystem{
     String nameOption;
-    String correctAnswer;
+    int correctAnswer;
     ArrayList<String> optionQuestions =new ArrayList<>();
     ArrayList<String> optionQuestions1 =new ArrayList<>();
     ArrayList<String> optionQuestions2 =new ArrayList<>();
@@ -16,84 +16,137 @@ public class Options implements TestSystem{
     Questions questions=new Questions();
     int score;
 
-    public ArrayList<String> getOptionQuestions() {
+    public ArrayList<String> getOptionQuestions() throws IOException{
 
         System.out.println(questions.getQuestions().get(0));
 
-        optionQuestions.add(0, "1. Вариант ответа 1");
-        optionQuestions.add(1, "2. Вариант ответа 2");
-        optionQuestions.add(2, "3. Вариант ответа 3");
-        optionQuestions.add(3, "4. Вариант ответа 4");
+        optionQuestions.add(0, "1. размера экрана дисплея");
+        optionQuestions.add(1, "2.  частоты процессора");
+        optionQuestions.add(2, "3. напряжения питания");
+        optionQuestions.add(3, "4. быстроты нажатия на клавиши");
 
         for (int i=0;i<optionQuestions.size();i++){
             System.out.println(optionQuestions.get(i));
         }
+        System.out.println("Введите номер варианта: ");
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        int answer = Integer.parseInt(r.readLine());
+            if (answer==2){
+                System.out.println("Верно");
+                correctAnswer++;
+            }
+            else {
+                System.out.println("Неверно");
+
+            }
+
 
         return optionQuestions;
     }
-    /*public ArrayList<String> getOptionQuestions1() {
+    public ArrayList<String> getOptionQuestions1() throws IOException {
         System.out.println(questions.getQuestions().get(1));
-        optionQuestions1.add(0,"1. Вариант ответа 1");
-        optionQuestions1.add(1,"2. Вариант ответа 2");
-        optionQuestions1.add(2,"3. Вариант ответа 3");
-        optionQuestions1.add(3,"4. Вариант ответа 4");
+        optionQuestions1.add(0,"1. бод");
+        optionQuestions1.add(1,"2. бит");
+        optionQuestions1.add(2,"3. байт");
+        optionQuestions1.add(3,"4. Кбайт");
 
         for (int i=0;i<optionQuestions1.size();i++){
             System.out.println(optionQuestions1.get(i));
         }
-
+        System.out.println("Введите номер варианта: ");
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        int answer1 = Integer.parseInt(r.readLine());
+        if (answer1==2){
+            System.out.println("Верно");
+            correctAnswer++;
+        }
+        else {
+            System.out.println("Неверно");
+        }
         return optionQuestions1;
     }
 
-    public ArrayList<String> getOptionQuestions2() {
+    public ArrayList<String> getOptionQuestions2() throws IOException{
         System.out.println(questions.getQuestions().get(2));
-        optionQuestions2.add(0,"1. Вариант ответа 1");
-        optionQuestions2.add(1,"2. Вариант ответа 2");
-        optionQuestions2.add(2,"3. Вариант ответа 3");
-        optionQuestions2.add(3,"4. Вариант ответа 4");
+        optionQuestions2.add(0,"1. принтер");
+        optionQuestions2.add(1,"2. монитор");
+        optionQuestions2.add(2,"3. системный блок");
+        optionQuestions2.add(3,"4. модем");
 
         for (int i=0;i<optionQuestions2.size();i++){
             System.out.println(optionQuestions2.get(i));
         }
+        System.out.println("Введите номер варианта: ");
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        int answer = Integer.parseInt(r.readLine());
+        if (answer==2){
+            System.out.println("Верно");
+            correctAnswer++;
+        }
+        else {
+            System.out.println("Неверно");
 
+        }
 
         return optionQuestions2;
     }
-    public ArrayList<String> getOptionQuestions3() {
+
+    public ArrayList<String> getOptionQuestions3() throws IOException {
         System.out.println(questions.getQuestions().get(3));
-        optionQuestions3.add(0,"1. Вариант ответа 1");
-        optionQuestions3.add(1,"2. Вариант ответа 2");
-        optionQuestions3.add(2,"3. Вариант ответа 3");
-        optionQuestions3.add(3,"4. Вариант ответа 4");
+        optionQuestions3.add(0,"1. поле");
+        optionQuestions3.add(1,"2. форма");
+        optionQuestions3.add(2,"3. таблица");
+        optionQuestions3.add(3,"4. запись");
 
         for (int i=0;i<optionQuestions3.size();i++){
             System.out.println(optionQuestions3.get(i));
         }
+  System.out.println("Введите номер варианта: ");
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        int answer = Integer.parseInt(r.readLine());
+        if (answer==1){
+            System.out.println("Верно");
+            correctAnswer++;
+        }
+        else {
+            System.out.println("Неверно");
 
+        }
 
         return optionQuestions3;
     }
-    public ArrayList<String> getOptionQuestions4() {
+
+    public ArrayList<String> getOptionQuestions4() throws IOException{
         System.out.println(questions.getQuestions().get(4));
-        optionQuestions4.add(0,"1. Вариант ответа 1");
-        optionQuestions4.add(1,"2. Вариант ответа 2");
-        optionQuestions4.add(2,"3. Вариант ответа 3");
-        optionQuestions4.add(3,"4. Вариант ответа 4");
+        optionQuestions4.add(0,"1. печати на принтере");
+        optionQuestions4.add(1,"2. работы с файлами");
+        optionQuestions4.add(2,"3. форматирования дискеты");
+        optionQuestions4.add(3,"4. выключения компьютера");
 
         for (int i=0;i<optionQuestions4.size();i++){
-            System.out.println(optionQuestions4.get(i));
-        }
-        return optionQuestions4;
-    }
-    */
-    public String getCorrectAnswer() throws IOException {
+            System.out.println(optionQuestions4.get(i));}
+            System.out.println("Введите номер варианта: ");
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         int answer = Integer.parseInt(r.readLine());
-        /*int answer1 = Integer.parseInt(r.readLine());
+        if (answer==2){
+            System.out.println("Верно");
+            correctAnswer++;
+        }
+        else {
+            System.out.println("Неверно");
+
+        }
+
+        return optionQuestions4;
+    }
+
+    /*public String getCorrectAnswer() throws IOException {
+
+        int answer1 = Integer.parseInt(r.readLine());
         int answer2 = Integer.parseInt(r.readLine());
         int answer3 = Integer.parseInt(r.readLine());
-        int answer4 = Integer.parseInt(r.readLine());*/
-          if (answer==2/*||answer1==3||answer2==2||answer3==2||answer4==4*/){
+        int answer4 = Integer.parseInt(r.readLine());
+          if (getOptionQuestions==2||answer1==3||answer2==2||answer3==2||answer4==4){
             System.out.println("Ответ верный");
             score++;
         } else {
@@ -102,7 +155,7 @@ public class Options implements TestSystem{
 
         return correctAnswer;
     }
-
+*/
     @Override
     public void show() {
 
