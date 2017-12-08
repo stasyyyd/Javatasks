@@ -2,7 +2,8 @@ package dvfu.java.testsystem;
 
 
 import java.io.IOException;
-
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 
 public class Test implements TestSystem {
@@ -18,8 +19,14 @@ public class Test implements TestSystem {
         options.getOptionQuestions3();
         options.getOptionQuestions4();
 
-
+        System.out.println("-----------------------------------------------------------------");
         System.out.println("Правильных ответов "+options.correctAnswer+" из 5");
+        System.out.println("Количество баллов "+options.score);
+        if (options.score<=2){
+            System.out.println("ТЕСТ НЕ ПРОЙДЕН!");
+        } else {
+            System.out.println("ТЕСТ ПРОЙДЕН!");
+        }
 
 
     }
@@ -27,7 +34,11 @@ public class Test implements TestSystem {
 
     @Override
     public void show() {
-    System.out.println("Информатика");
+        Date date =new Date();
+            SimpleDateFormat formatForDateNow = new SimpleDateFormat("E dd.MM.yyyy 'и время' hh:mm:ss ");
+            System.out.println("Дата прохождения теста: " + formatForDateNow.format(date));
+            System.out.println("Тема теста: Информатика"+"\n");
+
     }
 
     @Override
